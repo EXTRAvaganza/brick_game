@@ -1,4 +1,4 @@
-# Brick game - car racing
+# Brick game - car racing [Prod version](http://f0487110.xsph.ru/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
