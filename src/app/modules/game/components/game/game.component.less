@@ -1,0 +1,72 @@
+@blue-color: #900C3F;
+@gray-color: #581845;
+@semi-black: #900C3F;
+@game-black: #C70039;
+@apelsin: #FF5733;
+@game-black-secondary: #34495E;
+@light: #D6DBDF;
+@semi-black-secondary: #ABB2B9;
+.row {
+    display: inline-flex;
+}
+.game-container {
+    background-color:@gray-color;
+}
+.gray-point {
+    outline: 2px solid @gray-color;
+    border: 3px solid @semi-black;
+    width:13px;
+    height: 13px;
+    margin:2px;
+    .inside-point{
+        border: 2px solid @gray-color;
+        background:@semi-black;
+        width:9px;
+        height: 9px;;
+    }
+}
+.stats-field {
+    height:460px;
+    display:block;
+}
+.black-point {
+    outline: 2px solid @gray-color;
+    border: 3px solid @game-black;
+    width:13px;
+    height: 13px;
+    margin:2px;
+    .inside-point{
+        border: 2px solid @gray-color;
+        background:@game-black!important;
+        width:9px;
+        height: 9px;;
+    }
+}
+.black-point-secondary {
+    outline: 2px solid @game-black-secondary;
+    border: 3px solid @light;
+    width:13px;
+    height: 13px;
+    margin:2px;
+    .inside-point{
+        border: 2px solid @game-black-secondary;
+        background:@light!important;
+        width:9px;
+        height: 9px;;
+    }
+}
+.game-field {
+    width:230px;
+    float: left;
+    display: grid;
+}
+.stats {
+    text-align: center;
+    padding-top:20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: @apelsin;
+}
+.btn {
+    color:@apelsin;
+}

@@ -1,0 +1,30 @@
+<div class="game-container">
+    <div class="game-field">
+        <div class="row" *ngFor="let row of blackValues; let i = index">
+            <div *ngFor="let item of row;let j = index" class="gray-point" [ngClass]="{'black-point-secondary':blackValues[i][j]}">
+                <div class="inside-point">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="stats-field">
+        <div class="stats">
+            <p>Счет игрока: <br>
+            {{score}}</p> 
+            <p>Рекорд:
+            </p>
+            {{dataService.getData()}}
+            <p>
+                Уровень:<br>
+                {{level}}
+            </p>
+        </div>
+        <button class="btn" (click)="toggle()">Начать игру</button>
+       <a href="https://github.com/EXTRAvaganza/brick_game">
+        <img style="padding-right: 20px;float:right;" src="../../../../../assets/images/gh.png">
+        </a>
+    </div>
+</div>
+
+
